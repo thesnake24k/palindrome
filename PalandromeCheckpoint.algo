@@ -1,0 +1,22 @@
+FUNCTION Palindrome(ch : STRING) : BOOLEAN
+VAR
+    pal : BOOLEAN;
+    n : INTEGER;
+BEGIN
+    pal := false;
+    n:= length(ch);
+    IF (ch = "" || n=1) THEN
+        pal := True
+    ELSE
+        IF (ch[0]=ch[n-1]) THEN
+            palindrome(ch[1 : n-2]);
+        END_IF
+    END_IF
+    RETURN pal ;
+END
+
+radar ch[0]=r := ch[4]=r
+ada ch[0]=a := ch[2]=a
+d, n=1 => palindrome
+
+Message #général
